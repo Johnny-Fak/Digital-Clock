@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Real Time</title>
+</head>
+<body>
+    <div id="time">
+       <script>
+		    let timerDiv = document.querySelector("#time")
+		    const timer=()=>{
+			    let d = new Date()
+			    timerDiv.innerHTML = d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()
+		    }
+		    setInterval(timer, 1000)
+       </script> 
+    </div>
+</body>
+</html>
